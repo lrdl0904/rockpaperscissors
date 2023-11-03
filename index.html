@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper, Scissor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button class="btn">Play Again</button>
+    <h1>Rock, Paper, Scissor</h1>
+
+    <div class="choices nohover">
+      <section class="rock-choice">
+        <img src="assets/1.png" alt="rock" />
+      </section>
+      <section class="paper-choice">
+        <img src="assets/2.png" alt="paper" />
+      </section>
+      <section class="scissors-choice">
+        <img src="assets/3.png" alt="scissors" />
+      </section>
+    </div>
+
+    <div class="enemy">
+      <img class="enemy--1 hidden" src="assets/1.png" alt="rock" />
+      <img class="enemy--2 hidden" src="assets/2.png" alt="rock" />
+      <img class="enemy--3 hidden" src="assets/3.png" alt="rock" />
+    </div>
+
+    <h2 class="you--win hidden">You Win!</h2>
+    <h2 class="you--lose hidden">You Lose!</h2>
+    <h2 class="draw hidden">It's A Draw!</h2>
+
+    <script src="script.js"></script>
+  </body>
+</html>

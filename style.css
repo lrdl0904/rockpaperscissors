@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  text-align: center;
+  background-color: black;
+  color: whitesmoke;
+  font-family: "Press Start 2P", sans-serif;
+}
+
+h1 {
+  margin-top: 150px;
+  /*got Press Start 2P from google-fonts, san-serif is the second choice if Press Start 2P doesn't work */
+  font-size: 50px;
+}
+
+h2 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: -150px;
+}
+
+.btn {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  width: 200px;
+  border-width: 4px;
+  height: 60px;
+  background-color: white;
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: black;
+  color: whitesmoke;
+  width: 210px;
+  height: 70px;
+}
+
+.choices {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100vw;
+  margin-top: 100px;
+  padding: 10px 50px;
+}
+
+.nohover img:hover {
+  height: 350px;
+  cursor: pointer;
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(0, 0) rotate(0deg) scaleX(0.5);
+  }
+  to {
+    transform: translate(-300px, 0) rotate(90deg) scaleX(1);
+  }
+}
+
+.rotate {
+  animation: rotate 2s;
+  transform: translate(-300px, 0) rotate(90deg) scaleX(1);
+}
+
+@keyframes rotateRight {
+  from {
+    transform: translate(0, -290px) rotate(0deg) scaleX(0.5);
+  }
+  to {
+    transform: translate(300px, -290px) rotate(-90deg) scaleX(-1);
+  }
+}
+
+.rotateRight {
+  animation: rotateRight 2s;
+  transform: translate(300px, -290px) rotate(-90deg) scaleX(-1);
+}
+
+.hidden {
+  display: none;
+}
+
+.resetRotation {
+  animation: rotate 0s reverse;
+}
